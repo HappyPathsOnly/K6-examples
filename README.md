@@ -1,2 +1,2 @@
 # K6-examples
-Some K6 ideas for a Udemy course
+Some K6 ideas from a Udemy course
