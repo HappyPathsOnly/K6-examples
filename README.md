@@ -22,3 +22,7 @@ This repository contains example k6 scripts based on a Udemy course. The scripts
 ## Notes
 - Update URLs in scripts as needed for your environment.
 - Scripts are for educational purposes and can be adapted for real-world testing.
+
+## Additional Resources
+- [k6 OSS Workshop](https://github.com/grafana/k6-oss-workshop?tab=readme-ov-file)
+- [test-api.k6.io](https://github.com/grafana/test-api.k6.io?tab=readme-ov-file)
