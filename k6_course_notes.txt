@@ -1,0 +1,104 @@
+
+Section 1:
+
+Iterations are repeating the same action.
+
+Metrics:
+http_req_duration: most important
+p(90) = percentile: 90 % 
+
+service level objective:
+available 99.8% of time
+
+############################################################
+Section 2:
+
+Performance testing
+
+Load test:
+with multiple users
+Stress test - to breaking point
+Spike test - unexpected big load
+
+What are the set goals?
+
+
+Scaling: 
+vertical scaling - single server more mem or cpu
+horizontal scaling - add more servers
+monolithic difficult to scale horizontally
+micorservices easy to scale horizontally
+
+Smoke test:
+basic functionality of application not performance test 
+i.e. just one user with limited script. 
+Also some baseline values from metrics
+
+check http_req_failed status
+http_req_duration probably best value
+
+Load testing:
+test under typical load. 
+maybe for around 30 minutes
+ramp up users with time delay waiting
+ramp up stage - 10% of test 
+stay at value -
+ramp down stage - 10% of test
+aim has performance degraded in comparison with previous value. i.e. run when changes happens to sw or infrastrucutre.
+
+Stress test:
+higher than normal load
+based on historical data
+if bad performance at full load does it get better at ramp down
+run load test first
+
+Spike test:
+sudden incresae in load
+Maybe four times what you have for the stress test.
+Not ran on a regular basis
+If a big event is coming up.
+
+Breakpoint testing:
+gradually increase load until the application breaks
+maximum capacity of application
+after load and stress
+not very useful in an elastic environment where scaling takes place.
+
+Soak testing:
+endurance test, a load test for a longer duration. 
+run after load test
+
+#########################################################
+
+Section 3:
+Metrics:
+counters,
+rate, (percentage)
+trend, (stats mean/average etc)
+gauge (check value)
+
+https://grafana.com/docs/k6/latest/using-k6/metrics/reference/
+
+If the count for a http_reqs is double rememeber there may be a redirect in there somewhere
+"k6 counts every actual HTTP request under the hood, and redirects often sneak in an "extra" one if you’re not watching closely. Adding the trailing slash is a simple but effective fix."
+
+
+https://mockbin.io/ mocks endpoints.
+
+curl -X POST -H "Content-Type: application/json" -d '{"message": "Hello World"}' https://dbe2276de4a14a50be58f8e4d10ddae5.api.mockbin.io/ --200 response
+curl -X POST -H "Content-Type: application/json" -d '{"message": "Hello World"}' https://8983b0e0bb944791a33d5e3e4ad6635e.api.mockbin.io/ --201 response
+
+tags:
+https://grafana.com/docs/k6/latest/using-k6/tags-and-groups/
+
+ k6 run .\groups.js --summary-mode=full
+ k6 run .\groups.js --summary-mode=legacy
+  
+to see different stats
+  
+###################################################################
+Section 4:
+
+
+########################################################
+
