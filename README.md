@@ -24,6 +24,6 @@ This repository contains example k6 scripts based on a Udemy course. The scripts
 - Scripts are for educational purposes and can be adapted for real-world testing.
 
 ## Additional Resources
-- [k6 OSS Workshop](https://github.com/grafana/k6-oss-workshop?tab=readme-ov-file)
-- [test-api.k6.io](https://github.com/grafana/test-api.k6.io?tab=readme-ov-file)
+- [k6 OSS Workshop](https://github.com/grafana/k6-oss-workshop?tab=readme-ov-file) - a K6 workshop with examples
+- [test-api.k6.io](https://github.com/grafana/test-api.k6.io?tab=readme-ov-file) - this repo is deprecated but is used in section 4 of these scripts.
 - [A Quick Start Guide to Learning Performance Testing](https://www.ministryoftesting.com/articles/a-quick-start-guide-to-learning-performance-testing) - This article is focused on general performance testing concepts and is not specific to k6.
