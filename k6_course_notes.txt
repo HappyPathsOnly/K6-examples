@@ -99,6 +99,17 @@ to see different stats
 ###################################################################
 Section 4:
 
+Make REST API calls with K6. 
+
+This section uses a local instance of https://github.com/grafana/test-api.k6.io which is started with docker compose up
+
+Lives at http://localhost:8000/
+
+k6 run --http-debug="full"  .\http-get.js for more debug info 
+
+
+
+
 
 ########################################################
 
