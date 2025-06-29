@@ -6,7 +6,7 @@ This repository contains example k6 scripts based on a Udemy course. The scripts
 - `section1-intro/`: Basic k6 script examples
 - `Section2-k6-test-types/`: Different types of load tests (smoke, load, stress, spike, soak, breakpoint)
 - `Section3-creating-test-scripts/`: Advanced scripting (custom metrics, tags, groups, aborting tests, scenarios, etc.)
-- `Section4-BuildingAPIs/`: (Reserved for API testing examples)
+- `Section4-BuildingAPIs/`: Examples of making REST API calls with k6.
 
 ## Running the Tests
 1. Install [k6](https://k6.io/docs/getting-started/installation/).
