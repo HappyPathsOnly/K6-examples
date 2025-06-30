@@ -107,9 +107,11 @@ Lives at http://localhost:8000/
 
 k6 run --http-debug="full"  .\http-get.js for more debug info 
 
+Check for 301 Moved Permanently response. If this is received then K6 will do a redirect.
 
+Put is update
 
-
+Patch is  partial update.
 
 ########################################################
 
