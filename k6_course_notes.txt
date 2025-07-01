@@ -123,5 +123,10 @@ k6 run -e BASE_URL=http://localhost:8000 env-var.js
 
 Sleep for random amounts simulates more realistic VU behaviour.
 
+In k6, a SharedArray is a way to load data once and share it across all virtual users (VUs) in a test. 
+This helps reduce memory usage and improve performance, especially when working with large datasets like CSV files or arrays of test data.
+
+K6 has external library for csv processing from papaparse
+
 #######################################################
 
