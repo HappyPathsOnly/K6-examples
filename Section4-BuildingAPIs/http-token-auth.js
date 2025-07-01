@@ -34,6 +34,8 @@ export default function () {
     );
 
     const accessToken = res.json().access;
+    console.log(credentials.username + ' logged in with access token:');
+    console.log(credentials.password + 'logged in with access token:');
     console.log(accessToken);
 
     http.get(

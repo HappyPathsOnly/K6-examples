@@ -130,3 +130,25 @@ K6 has external library for csv processing from papaparse
 
 #######################################################
 
+Section 6:
+
+Running testing in the grafana cloud.
+
+K6 cloud login --token <token>
+
+k6 cloud <file-name>
+
+Note execution print out states 'cloud'
+
+Possibly to run locally and push results to cloud by line below:
+
+k6 run <file-name> -o cloud
+
+This points the output link to grafana cloud.
+
+Note file k6-test-api.js is run against the local API and the results pushed as I believe the public API does not exist anymore.
+
+Cloud insights are at https://grafana.com/docs/grafana-cloud/testing/k6/analyze-results/get-cloud-insights/
+
+
+
