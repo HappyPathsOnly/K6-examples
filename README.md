@@ -7,9 +7,11 @@ This repository contains example k6 scripts based on a Udemy course. The scripts
 - `Section2-k6-test-types/`: Different types of load tests (smoke, load, stress, spike, soak, breakpoint)
 - `Section3-creating-test-scripts/`: Advanced scripting (custom metrics, tags, groups, aborting tests, scenarios, etc.)
 - `Section4-BuildingAPIs/`: Examples of making REST API calls with k6.
+- `section5-env-and-data/`: Using environment variables and reading external data.
+- `section6-cloud/`: Running tests in Grafana Cloud.
 
 ## Running the Tests
-1. Install [k6](https://k6.io/docs/getting-started/installation/).
+1. Install [k6](https://grafana.com/docs/k6/latest/set-up/install-k6/).
 2. Run a script using:
    ```sh
    k6 run path/to/script.js
