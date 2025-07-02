@@ -150,5 +150,28 @@ Note file k6-test-api.js is run against the local API and the results pushed as 
 
 Cloud insights are at https://grafana.com/docs/grafana-cloud/testing/k6/analyze-results/get-cloud-insights/
 
+##############################################################
 
+Section 7: 
+
+CLI options
+
+k6 run script.js --vus 1 --duration 10s --iteration 1
+k6 run script.js --insecure-skip-tls-verify allows self signed certificates
+k6 run script.js --summary-export=summary.json 
+k6 run script.js --out  json=full_results.json 
+
+flags overwrite code options 
+
+https://grafana.com/docs/k6/latest/using-k6/k6-options/how-to/
+
+https://grafana.com/docs/k6/latest/using-k6/k6-options/reference/
+
+See live dashboard and generate html output
+set "K6_WEB_DASHBOARD=true" & set "K6_WEB_DASHBOARD_EXPORT=k6-report.html" & k6 run script.js
+
+https://grafana.com/docs/k6/latest/results-output/web-dashboard/#web-dashboard
+
+
+##############################################################
 
