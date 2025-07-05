@@ -10,6 +10,7 @@ This repository contains example k6 scripts based on a Udemy course. The scripts
 - `section5-env-and-data/`: Using environment variables and reading external data.
 - `section6-cloud/`: Running tests in Grafana Cloud.
 - `section7-cli-and-output/`: Useful k6 CLI options and dashboard features.
+- `section9-conclusions/`: Browser testing and conclusions.
 
 ## Running the Tests
 1. Install [k6](https://grafana.com/docs/k6/latest/set-up/install-k6/).
