@@ -175,3 +175,27 @@ https://grafana.com/docs/k6/latest/results-output/web-dashboard/#web-dashboard
 
 ##############################################################
 
+
+Section 9:
+
+Course Conclusions
+
+Is test execution valid i.e. does it test what we require?
+Check output for
+
+VUs
+duration
+http_res (i.e. rate per seconds)
+iterations (what should the capacity be i.e. reqs per minute)
+are thresholds ok
+
+https://grafana.com/docs/k6/latest/using-k6-browser/
+https://grafana.com/docs/k6/latest/using-k6-browser/running-browser-tests/
+
+To run in headless mode on Windows in Powershell
+
+ $env:K6_BROWSER_HEADLESS = "false"
+ k6 run .\browser.js
+
+
+###############################################################
