@@ -48,7 +48,7 @@ aim has performance degraded in comparison with previous value. i.e. run when ch
 
 Stress test:
 higher than normal load
-based on historical data
+based on historical data with something like the highest normal load in the day.
 if bad performance at full load does it get better at ramp down
 run load test first
 
@@ -67,6 +67,8 @@ not very useful in an elastic environment where scaling takes place.
 Soak testing:
 endurance test, a load test for a longer duration. 
 run after load test
+
+Usually run performance tests on pre-production environment.
 
 #########################################################
 
